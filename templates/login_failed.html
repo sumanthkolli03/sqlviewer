@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+
+{% block head %}
+<h1>SQL Login</h1>
+<h3>login failed, try again</h3>
+{% endblock %}
+
+
+{% block body %}
+<form method="post" action="{{ url_for('login') }}">
+    <label for="DATABASE URL">DATABASE URL:</label>
+    <input type="text" id="uurl" name="uurl" value="localhost" required>
+    <br>
+    <label for="DATABASE SERVER PORT">DATABASE SERVER PORT:</label>
+    <input type="text" id="port" name="port" value="3306" required>
+    <br>
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username" value="root" required>
+    <br>
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" required>
+    <br>
+    <button type="submit">Login</button>
+  </form>
+{% endblock %}
