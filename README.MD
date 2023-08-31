@@ -1,6 +1,5 @@
 Steps to run:
     Try opening with the `start windows.bat` or using `start mac.sh`.
-    I have a PC, so I can only test the `start windows.bat`.
     If it fails, do the following:
 
 * open terminal or cmd 
@@ -15,7 +14,6 @@ Mac:
 * `pip install -r requirements.txt` or equivalent that'll install requirements
 * `python3 app.py` or equivalent that'll run app.py
 
-Again, mac is untested, so the gist is to open the venv, install the requirements, and run app.py.
 
 To Use:
     Make sure the mysql service is running on your PC.
